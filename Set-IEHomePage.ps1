@@ -8,7 +8,7 @@ function Set-IEHomePage ([string]$website)
     if ($pathExists)
     {
         #Set the new homepage
-        Set-ItemProperty -Path $path -Name "Main" -Value $website
+        Set-ItemProperty -Path $path -Name "Start Page" -Value $website
         Set-ItemProperty -Path $path -Name "Default_Page_Url" -Value $website
     }
 }
